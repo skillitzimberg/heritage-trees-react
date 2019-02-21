@@ -17,10 +17,9 @@ title : "Earl Boyles Elementary School",
 position: {lat: 45.494709,
 lng: -122.551952}
 }];
-// initialCenter={{
-//     lat: 45.5122,
-//     lng: -122.6587
-//   }}
+
+
+
 export class MapContainer extends React.Component {
 
   render(){
