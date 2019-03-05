@@ -1,5 +1,6 @@
 import React from 'react';
 import { Map, InfoWindow, Marker, GoogleApiWrapper } from 'google-maps-react';
+import { connect } form 'react-redux'; 
 
 
 const style = {
@@ -28,7 +29,6 @@ export class MapContainer extends React.Component {
 
 
   render(){
-    console.log(this.props.treeData);
     return (
       <Map
         google={this.props.google}
