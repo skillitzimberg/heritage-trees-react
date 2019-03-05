@@ -1,7 +1,6 @@
 import React from 'react';
 import { Map, InfoWindow, Marker, GoogleApiWrapper } from 'google-maps-react';
-import { connect } form 'react-redux'; 
-
+import { connect } from 'react-redux';
 
 const style = {
   width: '100%',
@@ -29,6 +28,7 @@ export class MapContainer extends React.Component {
 
 
   render(){
+    console.log(this.props)
     return (
       <Map
         google={this.props.google}
@@ -38,13 +38,16 @@ export class MapContainer extends React.Component {
           lng: -122.6587
         }}
         zoom={12}>
-        {this.props.treeData.map((marker, index) =>
-          <Marker title={marker.properties.COMMON}
+        {Object.keys(this.props.treeData).map((treeId) => {
+
+          let marker = this.props.treeData[treeId];
+          return <Marker title={marker.properties.COMMON}
             position={{lat: marker.properties.LAT, lng: marker.properties.LON}}
             address={marker.properties.SITE_ADDRESS}
             year={marker.properties.YEAR_Designated}
             onClick={this.onMarkerClick}
-            key={index} />
+            key={treeId} />
+        }
         )}
         <InfoWindow
           marker={this.state.activeMarker}
