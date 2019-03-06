@@ -30,10 +30,8 @@ A web application that lets users find Portland's heritage trees. By default the
 * Redux
 * Styled Components
 * Jest
-* [Trimet Trip Planner API](https://developer.trimet.org/ws_docs/tripplanner_ws.shtml)
-* [Mapbox](https://www.mapbox.com/) 
-* Icons from [Good Ware](https://www.flaticon.com/packs/transportation-46)
-* Icons made by [Freepik](https://www.flaticon.com/authors/freepik) from [www.flaticon.com](https://www.flaticon.com/) is licensed by [CC 3.0 BY](http://creativecommons.org/licenses/by/3.0/)
+* Thunk
+* [Google Maps Javascript API](https://developers.google.com/maps/documentation/javascript/tutorial)
 
 ## Support and contact details
 
